@@ -13,7 +13,7 @@ function projectPaths = setupProject(selectedPatientIDs)
     %     3. Verifies and moves all required files to their appropriate directories.
     %     4. Verifies the existence of all required raw data files for selected patients.
     %     5. Checks that all Python packages specified in 'requirements.txt' are installed with the correct versions.
-    %     6. Verifies the presence of 'metaData.mat' and checks for duplicates.
+    %     6. Verifies the presence of 'metaData.mat'
     %
     % Inputs:
     %   selectedPatientIDs - (string array) List of selected patient session IDs, e.g., ["P60cs", "P62cs"].
@@ -60,7 +60,7 @@ function projectPaths = setupProject(selectedPatientIDs)
         error(['Project setup failed: ' ME.message]);
     end
 
-    % Check for 'metaData.mat' file and handle duplicates
+    % Check for 'metaData.mat' file 
     try
         checkMetaDataFile(projectPaths, projectPaths.logFilePath);
         logMessage('metaData.mat verification completed.', projectPaths.logFilePath, 'INFO');

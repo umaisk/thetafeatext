@@ -52,7 +52,7 @@
  - trialinfoSternbergCAT.m                                                                                      
  - closest.mexw64  
 
- *All four of these .m files have been omitted.*                                                                 
+ *All four of these files have been omitted.*                                                                 
 └───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  

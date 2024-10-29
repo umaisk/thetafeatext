@@ -7,7 +7,7 @@
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
                                   Description:                                               
                    
- This script processes intracranial EEG data collected in the Ueli Rutishauser Lab at                           
+ This script processes intracranial EEG data collected in Ueli Rutishauser's Lab at                           
  Cedars-Sinai Medical Center, Department of Neurosurgery. The EEG processing here                               
  was used for analyses shown in Extended Figure 3c of the following publication.                                
 └───────────────────────────────────────────────────────────────────────────────────────┘  
@@ -89,7 +89,7 @@
                                                              
  A sample of the pipeline's final output is available to view here:     
                                          
- '.\data\cycle_features\P60cs\HP\P60cs_HP_bycycle_features_YYYYMMDD_#####_sample.csv'  
+ '.\data\cycle_features\PatientID1\BrainRegion2\PatientID1_BrainRegion2_bycycle_features_YYYYMMDD_#####_sample.csv'  
 
  A sample of MATLAB log file can be viewed inside '.\logs' and Python log file inside '.\RunBycycle.log'  
 

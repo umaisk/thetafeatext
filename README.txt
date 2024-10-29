@@ -63,7 +63,7 @@
     Python dependencies) are also located in the same directory.                                                 
  2. Configure the selectedPatientIDs and selectedBrainRegions variables as                                       
     needed. All selected brain regions will be analyzed for the specified patients.  
- 3. Open MATLAB in administrator mode, navigate to the project directory containing `MAIN.m` 
+ 3. Open MATLAB in ADMINISTRATOR MODE, navigate to the project directory containing `MAIN.m` 
     (e.g., C:\Users\your-username\Desktop\ThetaFeatureExtraction) using the MATLAB command window to execute MAIN.m
 
     '''matlab

@@ -17,7 +17,7 @@ function call_python_bycycle(metaDataExtFilePath, logFilePath)
     %   None (the function executes the Python script and handles logging).
     %
     % See Also:
-    %   newmain, logMessage
+    %   MAIN, logMessage
 
     %% Load metaDataExt Structure from MAT-File
     try

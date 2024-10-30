@@ -28,7 +28,7 @@
 └───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
-                               References:
+                               Python Dependencies:
 
 Cole, S., & Voytek, B. (2019). Cycle-by-cycle analysis of neural oscillations. 
 Journal of Neurophysiology, 122(2), 849-861. 
@@ -39,7 +39,38 @@ Cole, S., Donoghue, T., Gao, R., & Voytek, B. (2019). NeuroDSP: A package for ne
 Journal of Open Source Software, 4(36), 1272. 
 https://doi.org/10.21105/joss.01272
 NeuroDSP Documentation: https://neurodsp-tools.github.io/
+└───────────────────────────────────────────────────────────────────────────────────────┘  
 
+┌───────────────────────────────────────────────────────────────────────────────────────┐  
+                   MATLAB Dependencies (Author: Jonathan Daume, 2020):  
+                                               
+ - defineTrialsStCat.m                                                                                          
+ - defineStCATsessions.m                                                                                        
+ - trialinfoSternbergCAT.m                                                                                    
+ - closest.mexw64  
+
+ *All four of these files have been omitted.*                   
+└───────────────────────────────────────────────────────────────────────────────────────┘  
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐  
+                               *IMPORTANT*  
+                                                             
+ A sample of the pipeline's final output is available to view here:     
+                                         
+ '.\data\cycle_features\PatientID1\BrainRegion2\PatientID1_BrainRegion2_bycycle_features_YYYYMMDD_#####_sample.csv'  
+
+ A sample of MATLAB log file can be viewed inside '.\logs' and Python log file inside '.\RunBycycle.log'  
+
+ This codebase is not intended to allow execution of the pipeline as all data and                             
+ some core .m file dependencies have been omitted. It is assembled to provide the                                 
+ user with a high-level understanding of the software architecture, including:         
+                      
+    - Error handling and validations                                                                             
+    - Logging and modularity                                                                                     
+    - Integration of Python-MATLAB environments                                                                   
+    - Documentation practices                                                                                    
+    - Clean, efficient vectorized code                                                                           
+└───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
                           Overview of Codebase Function:     
@@ -56,17 +87,6 @@ NeuroDSP Documentation: https://neurodsp-tools.github.io/
  Note: The terms 'session' and 'patient' are used interchangeably throughout the codebase.                            
  Each session corresponds to one patient's data for a given recording/experimental                               
  session.                                                                                                       
-└───────────────────────────────────────────────────────────────────────────────────────┘  
-
-┌───────────────────────────────────────────────────────────────────────────────────────┐  
-                   Dependencies (Author: Jonathan Daume, 2020):  
-                                               
- - defineTrialsStCat.m                                                                                          
- - defineStCATsessions.m                                                                                        
- - trialinfoSternbergCAT.m                                                                                      
- - closest.mexw64  
-
- *All four of these files have been omitted.*                                                                 
 └───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
@@ -99,33 +119,13 @@ NeuroDSP Documentation: https://neurodsp-tools.github.io/
 └───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
-                               *IMPORTANT*  
-                                                             
- A sample of the pipeline's final output is available to view here:     
-                                         
- '.\data\cycle_features\PatientID1\BrainRegion2\PatientID1_BrainRegion2_bycycle_features_YYYYMMDD_#####_sample.csv'  
-
- A sample of MATLAB log file can be viewed inside '.\logs' and Python log file inside '.\RunBycycle.log'  
-
- This codebase is not intended to allow execution of the pipeline as all data and                             
- some core .m file dependencies have been omitted. It is assembled to provide the                                 
- user with a high-level understanding of the software architecture, including:         
-                      
-    - Error handling and validations                                                                             
-    - Logging and modularity                                                                                     
-    - Integration of Python-MATLAB environments                                                                   
-    - Documentation practices                                                                                    
-    - Clean, efficient vectorized code                                                                           
-└───────────────────────────────────────────────────────────────────────────────────────┘  
-
-┌───────────────────────────────────────────────────────────────────────────────────────┐  
                            Python Engine Setup:     
                                                             
  This script requires the MATLAB-Python Engine to run the Theta Burst Feature                                    
  Extraction pipeline via the Bycycle package in Python:      
                                                     
  https://github.com/bycycle-tools/bycycle                                                                        
-└───────────────────────────────────────────────────────────────────────────────────────┘  
+───────────────────────────────────────────────────────────────────────────────────────  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
                          Step 1: Install Python (version 3.x)   

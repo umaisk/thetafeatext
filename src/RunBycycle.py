@@ -1,3 +1,22 @@
+"""
+Author: Umais Khan
+
+Description:
+This Python script implements neural oscillation analysis using NeuroDSP and ByCycle tools. 
+It includes customized methods for cycle-by-cycle analysis based on Cole & Voytek (2019). 
+The work here integrates openly accessible Python packages for neural signal processing.
+
+References:
+1. Cole, S., & Voytek, B. (2019). Cycle-by-cycle analysis of neural oscillations. 
+   Journal of Neurophysiology, 122(2), 849-861. https://doi.org/10.1152/jn.00273.2019  
+   ByCycle Documentation: https://bycycle-tools.github.io/bycycle/
+
+2. Cole, S., Donoghue, T., Gao, R., & Voytek, B. (2019). NeuroDSP: A package for 
+   neural digital signal processing. Journal of Open Source Software, 4(36), 1272. 
+   https://doi.org/10.21105/joss.01272  
+   NeuroDSP Documentation: https://neurodsp-tools.github.io/
+"""
+
 # Import necessary libraries
 import os
 import re  # For regex operations and label sanitization
@@ -630,8 +649,7 @@ def main() -> None:
                         logging.info(f"Region-specific CSV file created: {region_csv_path}")
                         
                         # Validate the created CSV file
-                        # Assuming expected_columns are ['trial', 'channel_idx', 'channel_label'] plus Bycycle features
-                        # If Bycycle features columns are known, they can be specified. Otherwise, we'll check for minimum columns
+                        # If Bycycle features columns are known, they can be specified here. Otherwise, check for minimum columns
                         min_expected_columns = 3  # 'trial', 'channel_idx', 'channel_label'
                         is_valid = validate_csv(file_path=region_csv_path, expected_min_rows=1)
                         if not is_valid:

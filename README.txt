@@ -69,7 +69,7 @@ NeuroDSP Documentation: https://neurodsp-tools.github.io/
     - Logging and modularity                                                                                     
     - Integration of Python-MATLAB environments                                                                   
     - Documentation practices                                                                                    
-    - Clean, efficient vectorized code                                                                           
+    - Clean, efficient code                                                                           
 └───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  

@@ -1,7 +1,7 @@
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
                             Codebase Author: Umais Khan          
                                                
-    (for all .m files except the dependencies listed below)                                                     
+    (for all .m files except the dependencies listed below and for RunBycycle.py file)                                                     
 └───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
@@ -28,6 +28,18 @@
 └───────────────────────────────────────────────────────────────────────────────────────┘  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
+                               References:
+
+ -Cole, S., & Voytek, B. (2019). Cycle-by-cycle analysis of neural oscillations. 
+Journal of Neurophysiology, 122(2), 849-861. 
+https://doi.org/10.1152/jn.00273.2019
+ByCycle Documentation: https://bycycle-tools.github.io/bycycle/
+
+Cole, S., Donoghue, T., Gao, R., & Voytek, B. (2019). NeuroDSP: A package for neural digital signal processing. 
+Journal of Open Source Software, 4(36), 1272. 
+https://doi.org/10.21105/joss.01272
+NeuroDSP Documentation: https://neurodsp-tools.github.io/
+┌───────────────────────────────────────────────────────────────────────────────────────┐  
                           Overview of Codebase Function:     
                                                         
  - Initializes the project setup by verifying file structures and dependencies                                  
@@ -36,7 +48,7 @@
  - Declares and populates structured data containers with trial information                                     
  - Extracts LFP data from selected brain regions                                                                
  - Filters sessions based on LFP data availability                                                              
- - Initiates the Theta Burst Feature Extraction pipeline in Python using Bycycle                                
+ - Initiates the Theta Burst Feature Extraction pipeline in Python using Bycycle and neuroDSP                               
 
                                                                                                         
  Note: The terms 'session' and 'patient' are used interchangeably throughout the codebase.                            

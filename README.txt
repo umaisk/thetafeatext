@@ -30,7 +30,7 @@
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
                                References:
 
- -Cole, S., & Voytek, B. (2019). Cycle-by-cycle analysis of neural oscillations. 
+Cole, S., & Voytek, B. (2019). Cycle-by-cycle analysis of neural oscillations. 
 Journal of Neurophysiology, 122(2), 849-861. 
 https://doi.org/10.1152/jn.00273.2019
 ByCycle Documentation: https://bycycle-tools.github.io/bycycle/
@@ -39,6 +39,8 @@ Cole, S., Donoghue, T., Gao, R., & Voytek, B. (2019). NeuroDSP: A package for ne
 Journal of Open Source Software, 4(36), 1272. 
 https://doi.org/10.21105/joss.01272
 NeuroDSP Documentation: https://neurodsp-tools.github.io/
+
+
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  
                           Overview of Codebase Function:     
                                                         

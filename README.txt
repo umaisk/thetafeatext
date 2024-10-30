@@ -122,9 +122,8 @@ NeuroDSP Documentation: https://neurodsp-tools.github.io/
                            Python Engine Setup:     
                                                             
  This script requires the MATLAB-Python Engine to run the Theta Burst Feature                                    
- Extraction pipeline via the Bycycle package in Python:      
-                                                    
- https://github.com/bycycle-tools/bycycle                                                                        
+ Extraction pipeline via the Bycycle & NeuroDSP packages in Python:      
+                                                                                                             
 ───────────────────────────────────────────────────────────────────────────────────────  
 
 ┌───────────────────────────────────────────────────────────────────────────────────────┐  

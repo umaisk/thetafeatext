@@ -649,7 +649,6 @@ def main() -> None:
                         logging.info(f"Region-specific CSV file created: {region_csv_path}")
                         
                         # Validate the created CSV file
-                        # If Bycycle features columns are known, they can be specified here. Otherwise, check for minimum columns
                         min_expected_columns = 3  # 'trial', 'channel_idx', 'channel_label'
                         is_valid = validate_csv(file_path=region_csv_path, expected_min_rows=1)
                         if not is_valid:
